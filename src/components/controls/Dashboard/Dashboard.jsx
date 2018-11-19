@@ -1,7 +1,5 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import NavBar from '../NavBar/NavBar';
-import NavDrawer from '../NavDrawer/NavDrawer';
 
 const styles = theme => ({
   root: {
@@ -35,8 +33,6 @@ class Dashboard extends React.Component {
 
     return (
       <div className={classes.root}>
-        <NavBar open={this.state.open} handleDrawerClose={this.handleDrawerClose} handleDrawerOpen={this.handleDrawerOpen} title={title} />
-        <NavDrawer open={this.state.open} handleDrawerClose={this.handleDrawerClose} handleDrawerOpen={this.handleDrawerOpen}/>
         {childrenWithProps}
       </div>
     );

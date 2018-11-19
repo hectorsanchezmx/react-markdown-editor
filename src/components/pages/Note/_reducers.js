@@ -1,4 +1,13 @@
-import { SET_NOTE } from './_types';
+import { SET_NOTES, SET_NOTE } from './_types';
+
+function notes(state = [], { type, payload }) {
+  switch (type) {
+    case SET_NOTES:
+      return payload;
+    default:
+      return state;
+  }
+};
 
 function note(state = {}, { type, payload }) {
   switch (type) {
@@ -9,4 +18,4 @@ function note(state = {}, { type, payload }) {
   }
 }
 
-export { note };
+export { notes, note };

@@ -1,6 +1,6 @@
 .editor {
   background: #212121;
-  height: 80vh;
+  height: 100%;
   color: #fff;
   width: 50%;
   padding: 1em;
@@ -9,5 +9,19 @@
 
   &:focus {
     outline: none;
+  }
+}
+
+
+.note {
+  cursor: pointer;
+
+  &:hover {
+    background: #ebebeb;
+  }
+
+  p {
+    margin: 0;
+    padding: 1em;
   }
 }
